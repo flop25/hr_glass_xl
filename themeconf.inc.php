@@ -2,8 +2,8 @@
 /*
 Theme Name: hr_glass_xl
 Version: 1.0.0
-Description: 
-Theme URI: http://fr.piwigo.org/ext/extension_view.php?eid=
+Description: A theme with an horizontal menu everywhere and a simple modern design
+Theme URI: http://fr.piwigo.org/ext/extension_view.php?eid=502
 Author: flop25
 Author URI: http://www.planete-flop.fr
 */
