@@ -1,7 +1,7 @@
 <?php
 /*
 Theme Name: hr_glass_xl
-Version: 1.0.0
+Version: auto
 Description: A theme with an horizontal menu everywhere and a simple modern design
 Theme URI: http://fr.piwigo.org/ext/extension_view.php?eid=502
 Author: flop25
