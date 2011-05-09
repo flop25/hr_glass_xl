@@ -1,3 +1,15 @@
 <!--[if lt IE 7]>
 	<link rel="stylesheet" type="text/css" href="{$ROOT_URL}themes/default/fix-ie5-ie6.css">
 <![endif]-->
+{if isset($display_hr_glass_xl_banner) and (!$display_hr_glass_xl_banner)}
+<style type="text/css">
+#{$BODY_ID}{literal} #theHeader { {/literal}
+	  background: url("{$ROOT_URL}themes/hr_glass_xl/img/header_back.png") repeat-x scroll center top transparent;{literal}
+    height: 25px;
+    margin: 0 auto;
+}{/literal}
+#{$BODY_ID}{literal} #theHeader * {
+	display:none;
+}{/literal}
+</style>
+{/if}
