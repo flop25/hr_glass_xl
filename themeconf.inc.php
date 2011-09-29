@@ -8,12 +8,12 @@ Author: flop25
 Author URI: http://www.planete-flop.fr
 */
 $themeconf = array(
-  'name'					=> 'hr_glass_xl',
+  'name'          => 'hr_glass_xl',
   'parent'        => 'default',
   'icon_dir'      => 'themes/hr_glass_xl/icon',
   'mime_icon_dir' => 'themes/hr_glass_xl/icon/mimetypes/',
-  'local_head'		=> 'local_head.tpl',
-  'activable'			=> true,
+  'local_head'    => 'local_head.tpl',
+  'activable'     => true,
 );
 // Need upgrade?
   if (!isset($conf['hr_glass_xl']))
