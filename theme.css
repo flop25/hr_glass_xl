@@ -185,9 +185,6 @@ textarea { width:80%; }
 /*	miniatures
 -----------------------------------------------------------------------------------------------*/
 .thumbnails SPAN, .thumbnails .wrap2 A, .thumbnails LABEL, .thumbnailCategory DIV.illustration {width:auto;}
-#content ul.thumbnails span.wrap2{ width: 172px; height:150px; }
-#content DIV.thumbnailCategory DIV.description { height: 100px; }		/* max thumbnail height + 2px */
-#content DIV.thumbnailCategory DIV.illustration img { height: 96px; }
 #content DIV.thumbnailCategory DIV.illustration a:hover { border:0; }
 
 #content DIV.comment BLOCKQUOTE {
@@ -217,7 +214,7 @@ textarea { width:80%; }
 
 /*	Menu
 -----------------------------------------------------------------------------------------------*/
-#menubar .button {
+.pwg-icon-filter {
 left:95%;
 position:absolute;
 }
