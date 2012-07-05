@@ -48,6 +48,31 @@ img{ border: 0; }
 .titrePage a {
 	color: #000000;
 }
+#derivativeSwitchBox, #sortOrderBox {
+	font-size: 11px;
+	color: #000033;
+	text-shadow: 0 0 2px #ccc;
+	padding: 4px 8px;
+	border: 1px solid rgba(255,255,255,0.25);
+	background-color: rgb(255,255,255);
+	background-color: rgba(255,255,255,0.92);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(transparent), to(#fff));
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	box-shadow: 0 0 5px #555;
+	-webkit-box-shadow: 0 0 5px #555;
+	-moz-box-shadow: 0 0 5px #555;
+}
+#derivativeSwitchBox A, #sortOrderBox A {
+	color: #000;
+}
+
+#derivativeSwitchBox A:hover, #sortOrderBox A:hover {
+	text-shadow: 0 0 2px #000;
+}
+
+
 /* Page
 -------------------------------------------------------- */
 BODY#thePicturePage,BODY#theCategoryPage, BODY#theTagsPage {}
@@ -55,7 +80,6 @@ BODY#thePicturePage,BODY#theCategoryPage, BODY#theTagsPage {}
 #the_page {
 	width: 940px;
 	margin: 0 auto;
-	position: relative;
 	background: transparent url(img/fond_milieu.png) repeat-y top center;
 }
 
@@ -148,11 +172,16 @@ body#theCommentsPage .content, body#theUploadPage .content, body#theRegisterPage
 	border-width: 1px 0;
 	padding: 5px 8px;
 }
-
+#imageToolBar .imageNumber {
+    float: right;
+    margin: -30px 9px 0 0;
+}
 #theImage IMG {
   padding: 5px;
   border: 1px solid #aaa;
+  margin-left: -10px;
 }
+#theMainImage {max-width:900px}
 
 #imageHeaderBar H2 { 
 	border: none;
@@ -218,9 +247,8 @@ textarea { width:80%; }
 left:95%;
 position:absolute;
 }
-#menubar { position: relative; z-index: 2; }
-#content { position: relative; z-index: 1; }
-
+#menubar { position: relative; }
+#theHeader { position: relative; }
 #content div.thumbnailCategory div.description {
 	overflow: hidden; /* bug in FF 1.0 (not 1.5) */
 }
