@@ -151,7 +151,7 @@ function hr_glass_xl_prefilter_picture($content, &$smarty)
     $content = str_replace($ps[$i], $pr, $content);
   }
   
-  $content ='{define_derivative name=\'der_hr_glass_xl\' width=900 height=9999 crop=false}
+  $content ='{define_derivative name=\'der_hr_glass_xl\' width=730 height=9999 crop=false}
 {assign var=der value=$pwg->derivative($der_hr_glass_xl, $current.src_image)}
 '.$content;
   return $content;
