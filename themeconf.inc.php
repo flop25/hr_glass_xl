@@ -82,16 +82,16 @@ function set_hr_glass_xl_header()
 function load_pattern()
 {
   global $pattern;
-  $pwgversion=str_replace('.','',PHPWG_VERSION);
+  $pwgversion=str_replace('.','_',PHPWG_VERSION);
   $pwgversion_array=explode('.', PHPWG_VERSION);
   if (file_exists($pwgversion.'pattern.php'))
   {
     include($pwgversion.'.pattern.php');
     return true;
   }
-  elseif (file_exists(PHPWG_ROOT_PATH.'themes/hr_glass_xl/'.$pwgversion_array[0].$pwgversion_array[1].'x.pattern.php'))
+  elseif (file_exists(PHPWG_ROOT_PATH.'themes/hr_glass_xl/'.$pwgversion_array[0].'_'.$pwgversion_array[1].'_x.pattern.php'))
   {
-    include(PHPWG_ROOT_PATH.'themes/hr_glass_xl/'.$pwgversion_array[0].$pwgversion_array[1].'x.pattern.php');
+    include(PHPWG_ROOT_PATH.'themes/hr_glass_xl/'.$pwgversion_array[0].'_'.$pwgversion_array[1].'_x.pattern.php');
     return true;
   }
   else
@@ -111,11 +111,11 @@ function load_pattern()
     }
     closedir($dh);
     $f=0;
-    for($i = 10; $i >=0; $i--)
+    for($i = 20; $i >=0; $i--)
     {
-      if (in_array($pwgversion_array[0].$i.'.pattern.php',$list_pattern_path))
+      if (in_array($pwgversion_array[0].'_'.$i.'.pattern.php',$list_pattern_path))
       {
-        include($pwgversion_array[0].$i.'.pattern.php');
+        include($pwgversion_array[0].'_'.$i.'_x.pattern.php');
         return true;
         $f=1;
         break;
