@@ -142,7 +142,7 @@ function hr_glass_xl_picture($content, $element_info)
   $template->set_prefilter('default_content', 'hr_glass_xl_prefilter_picture');
   return $content;
 }
-function hr_glass_xl_prefilter_picture($content, &$smarty)
+function hr_glass_xl_prefilter_picture($content)
 {
   global $pattern;
   $r=$pattern['hr_glass_xl_prefilter_picture']['R'];
